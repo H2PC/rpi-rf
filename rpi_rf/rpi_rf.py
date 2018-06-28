@@ -110,7 +110,7 @@ class RFDevice:
         elif (code < 16777216):
             self.tx_length = 24
         else:
-            self.tx_length = 32
+            self.tx_length = 27
 
         rawcode = format(code, '#0{}b'.format(self.tx_length + 2))[2:]
         _LOGGER.debug("TX code: " + str(code))
